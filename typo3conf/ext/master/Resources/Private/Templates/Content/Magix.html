@@ -1,0 +1,94 @@
+{namespace flux=FluidTYPO3\Flux\ViewHelpers}
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+{namespace cs2=TYPO3\TemplateGlobal\ViewHelpers}
+<f:layout name="Content" />
+
+<f:section name="Configuration">
+    <flux:form id="magix" label="Magix">
+
+        <flux:field.select label="Effect" name="effect" maxItems="1" size="1" items="{
+                           0:{0:'Effect 1',1:'magix1'},
+                           1:{0:'Effect 2',1:'magix2'},
+                           2:{0:'Effect 3',1:'magix3'},
+                           3:{0:'Effect 4',1:'magix4'}
+                           }" default="magix1"/>
+        <flux:field.input name="title" label="Title" />
+        <flux:field.input name="subtitle" label="Sub title" />
+        <flux:field.text name="text" label="Text" />
+        <flux:field.inline.fal name="image" allowedExtensions="jpg,png" maxItems="1" minItems="1" label="Image"/>
+    </flux:form>
+</f:section>
+
+<f:section name="Preview">
+    <div class="preview-container">
+        <p>Magix</p>
+    </div>
+</f:section>
+
+<f:section name="Main">
+
+    {v:content.resources.fal(field: 'image') -> v:iterator.first() -> v:variable.set(name: 'image')}
+
+    <f:if condition="{effect} =='magix1'">
+        <div class="container magix1">
+            <div class="thumbex">
+                <div class="thumbnail"><a href="#"><f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}"/><span>{title}</span></a></div>
+            </div>
+        </div>
+    </f:if>
+
+    <f:if condition="{effect} =='magix2'">
+        <div class="magix2">
+            <div class="mx-card">
+                <div class="imgBx">
+                    <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}"/>
+                </div>
+                <div class="details">
+                    <h2>{title}</h2>
+                    <p>{text}</p>
+                </div>
+            </div>
+        </div>
+    </f:if>
+
+    <f:if condition="{effect} =='magix3'">
+        <figure class="magix3">
+            <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}"/>
+            <figcaption>
+                <h3>{title}</h3>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+    </f:if>
+
+    <f:if condition="{effect} =='magix4'">
+        <figure class="magix4">
+            <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" height="320c" width="440c"/>
+            <div class="title">
+                <div>
+                    <h2>{title}</h2>
+                    <h4>{subtitle}</h4>
+                </div>
+            </div>
+            <figcaption>
+                <p>{text}</p>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+
+    </f:if>
+
+    <v:asset.script external="" name="magix" overwrite="1"  standalone="1" rewrite="1" fluid="1" movable="1" trim="1" >
+
+        <script type="text/javascript" >
+            jQuery(".hover").mouseleave(
+                function () {
+                    jQuery(this).removeClass("hover");
+                }
+            );
+        </script>
+
+    </v:asset.script>
+
+
+</f:section>

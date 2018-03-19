@@ -1,0 +1,47 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+{namespace flux=FluidTYPO3\Flux\ViewHelpers}
+<f:layout name="Content" />
+
+<f:section name="Configuration">
+    <v:variable.set name="numberOfColumns" value="12" />
+    <flux:form id="2columncontainer" label="3 Column Container">
+        <flux:field.select label="Ratio" name="widthratio" maxItems="1" size="1" items="33/33/33,25/25/50,25/50/25,50/25/25" default="33/33/33"/>
+        <flux:grid>
+            <flux:grid.row>
+                <v:variable.set name="colwidth"><v:iterator.explode content="{widthratio}" glue="/"/></v:variable.set>
+                <flux:grid.column name="column1" label="{colwidth.0}%" style="width: {colwidth.0}%" />
+                <flux:grid.column name="column2" label="{colwidth.1}%" style="width: {colwidth.1}%" />
+                <flux:grid.column name="column3" label="{colwidth.2}%" style="width: {colwidth.2}%" />
+            </flux:grid.row>
+        </flux:grid>
+    </flux:form>
+</f:section>
+
+<f:section name="Main">
+    <v:variable.set name="numberOfColumns" value="12" />
+    <f:if condition="{widthratio}">
+        <f:then>
+            <v:variable.set name="colwidth"><v:iterator.explode content="{widthratio}" glue="/"/></v:variable.set>
+        </f:then>
+        <f:else>
+            <v:variable.set name="colwidth"><v:iterator.explode content="33/33/33" glue="/"/></v:variable.set>
+        </f:else>
+    </f:if>
+    <v:variable.set name="colnameleft" value="{colwidth.0  -> v:math.division(b: 100) -> v:math.product(b: numberOfColumns) -> v:math.round(decimals: 0)}" />
+    <v:variable.set name="colnamecenter" value="{colwidth.1  -> v:math.division(b: 100) -> v:math.product(b: numberOfColumns) -> v:math.round(decimals: 0)}" />
+    <v:variable.set name="colnameright" value="{colwidth.2  -> v:math.division(b: 100) -> v:math.product(b: numberOfColumns) -> v:math.round(decimals: 0)}" />
+    <div class="row">
+        <div class="col-lg-{colnameleft} col-md-{colnameleft} col-sm-6">
+            <flux:content.render area="column1" />
+        </div>
+        <div class="col-lg-{colnamecenter} col-md-{colnamecenter} col-sm-6">
+            <flux:content.render area="column2" />
+        </div>
+        <div class="col-lg-{colnameright} col-md-{colnameright} col-sm-12">
+            <flux:content.render area="column3" />
+        </div>
+    </div>
+</f:section>
+
+<f:section name="Preview">
+</f:section>

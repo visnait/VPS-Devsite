@@ -1,0 +1,43 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+{namespace flux=FluidTYPO3\Flux\ViewHelpers}
+<f:layout name="Content" />
+
+<f:section name="Configuration">
+    <v:variable.set name="numberOfColumns" value="12" />
+    <flux:form id="2columncontainer" label="2 Column Container">
+        <flux:field.select label="Ratio" name="widthratio" maxItems="1" size="1" items="50/50,33/67,67/33,25/75,75/25" default="50/50"/>
+        <flux:grid>
+            <flux:grid.row>
+                <v:variable.set name="colwidth"><v:iterator.explode content="{widthratio}" glue="/"/></v:variable.set>
+                <flux:grid.column name="column1" label="{colwidth.0}%" style="width: {colwidth.0}%" />
+                <flux:grid.column name="column2" label="{colwidth.1}%" style="width: {colwidth.1}%" />
+            </flux:grid.row>
+        </flux:grid>
+    </flux:form>
+</f:section>
+
+<f:section name="Main">
+    <v:variable.set name="numberOfColumns" value="12" />
+    <f:if condition="{widthratio}">
+        <f:then>
+            <v:variable.set name="colwidth"><v:iterator.explode content="{widthratio}" glue="/"/></v:variable.set>
+        </f:then>
+        <f:else>
+            <v:variable.set name="colwidth"><v:iterator.explode content="50/50" glue="/"/></v:variable.set>
+        </f:else>
+    </f:if>
+    <v:variable.set name="colnameleft" value="{colwidth.0  -> v:math.division(b: 100) -> v:math.product(b: numberOfColumns) -> v:math.round(decimals: 0)}" />
+    <v:variable.set name="colnameright" value="{colwidth.1  -> v:math.division(b: 100) -> v:math.product(b: numberOfColumns) -> v:math.round(decimals: 0)}" />
+    <div class="row">
+        <div class="col-12 col-md-{colnameleft}">
+            <flux:content.render area="column1" />
+        </div>
+        <div class="col-12 col-md-{colnameright}">
+            <flux:content.render area="column2" />
+        </div>
+    </div>
+</f:section>
+
+<f:section name="Preview">
+
+</f:section>
