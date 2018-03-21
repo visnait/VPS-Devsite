@@ -10,8 +10,19 @@
                            0:{0:'Effect 1',1:'magix1'},
                            1:{0:'Effect 2',1:'magix2'},
                            2:{0:'Effect 3',1:'magix3'},
-                           3:{0:'Effect 4',1:'magix4'}
+                           3:{0:'Effect 4',1:'magix4'},
+                           4:{0:'Effect 5',1:'magix5'},
+                           5:{0:'Effect 6',1:'magix6'},
+                           6:{0:'Effect 7',1:'magix7'}
                            }" default="magix1"/>
+
+
+        <flux:field.select label="Icon" name="icon" maxItems="1" size="1" items="{
+                           0:{0:'Add',1:'ion-android-add'},
+                           1:{0:'Open',1:'ion-android-open'},
+                           2:{0:'Star',1:'ion-android-star-outline'},
+                           3:{0:'Watch',1:'ion-android-stopwatch'}
+                           }" default="ion-android-add"/>
         <flux:field.input name="title" label="Title" />
         <flux:field.input name="subtitle" label="Sub title" />
         <flux:field.text name="text" label="Text" />
@@ -78,16 +89,43 @@
 
     </f:if>
 
+    <f:if condition="{effect} =='magix5'">
+        <figure class="magix5">
+            <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" height="320c" width="440c"/>
+            <figcaption>
+                <h3>{title}</h3>
+                <h4>{subtitle}</h4>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+    </f:if>
+
+    <f:if condition="{effect} =='magix6'">
+        <figure class="magix6">
+            <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" height="440c" width="440c"/>
+            <figcaption><i class="{icon}"></i></figcaption>
+            <a href="#"></a>
+        </figure>
+    </f:if>
+
+    <f:if condition="{effect} =='magix7'">
+        <figure class="magix7">
+            <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" height="440c" width="440c"/>
+            <figcaption>
+                <blockquote>
+                    <p>{text}</p>
+                </blockquote>
+                <h3>{title}</h3>
+                <h5>{subtitle}</h5>
+            </figcaption>
+        </figure>
+    </f:if>
     <v:asset.script external="" name="magix" overwrite="1"  standalone="1" rewrite="1" fluid="1" movable="1" trim="1" >
-
-        <script type="text/javascript" >
-            jQuery(".hover").mouseleave(
-                function () {
-                    jQuery(this).removeClass("hover");
-                }
-            );
-        </script>
-
+        jQuery(".hover").mouseleave(
+            function () {
+                jQuery(this).removeClass("hover");
+            }
+        );
     </v:asset.script>
 
 

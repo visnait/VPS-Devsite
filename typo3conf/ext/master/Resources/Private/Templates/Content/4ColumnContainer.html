@@ -1,0 +1,37 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+{namespace flux=FluidTYPO3\Flux\ViewHelpers}
+<f:layout name="Content" />
+
+<f:section name="Configuration">
+    <v:variable.set name="numberOfColumns" value="12" />
+    <flux:form id="4columncontainer" label="4 Column Container">
+        <flux:grid>
+            <flux:grid.row>
+                <flux:grid.column name="column1" label="25%" style="width: 25%" />
+                <flux:grid.column name="column2" label="25%" style="width: 25%" />
+                <flux:grid.column name="column3" label="25%" style="width: 25%" />
+                <flux:grid.column name="column4" label="25%" style="width: 25%" />
+            </flux:grid.row>
+        </flux:grid>
+    </flux:form>
+</f:section>
+
+<f:section name="Main">
+    <div class="row equal">
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <flux:content.render area="column1" />
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <flux:content.render area="column2" />
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <flux:content.render area="column3" />
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <flux:content.render area="column4" />
+        </div>
+    </div>
+</f:section>
+
+<f:section name="Preview">
+</f:section>
