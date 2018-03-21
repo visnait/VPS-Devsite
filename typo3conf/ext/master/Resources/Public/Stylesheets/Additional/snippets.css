@@ -1,5 +1,5 @@
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
 
 figure.snip0001 {
     position: relative;
@@ -233,4 +233,1337 @@ figure.snip0003:hover a:nth-child(2) i {
 figure.snip0003:hover a:nth-child(3) i {
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s;
+}
+
+
+
+figure.snip0004 {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #222222;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+figure.snip0004 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+figure.snip0004 img {
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    opacity: 1.0;
+    right: 0;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+figure.snip0004 > div {
+    height: 100%;
+    left: -80px;
+    width: 70px;
+    position: absolute;
+    border-right: 2px solid #ffffff;
+    top: 0;
+    padding: 8px 4px;
+    color: #ffffff;
+    background: #222222;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+figure.snip0004 > div a i {
+    display: inline-block;
+    font-size: 32px;
+    color: #ffffff;
+    opacity: 0.75;
+    width: 100%;
+    padding: 5px 15px;
+    position: relative;
+    left: -60px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+figure.snip0004:hover img {
+    opacity: 0.5;
+    right: -60px;
+}
+figure.snip0004:hover > div {
+    left: 0;
+    opacity: 1;
+}
+figure.snip0004:hover > div a i {
+    left: 0;
+}
+figure.snip0004:hover a:first-child i {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+figure.snip0004:hover a:nth-child(2) i {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+figure.snip0004:hover a:nth-child(3) i {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+
+
+figure.snip0005 {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #222222;
+    text-align: center;
+}
+figure.snip0005 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+figure.snip0005 img {
+    position: relative;
+    top: 0;
+    opacity: 1.0;
+    right: 0;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+figure.snip0005 > div {
+    width: 100%;
+    bottom: -70px;
+    position: absolute;
+    padding: 4px;
+    color: #ffffff;
+    border-top: 2px solid #ffffff;
+    background: #222222;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+figure.snip0005 > div a i {
+    display: inline-block;
+    font-size: 32px;
+    color: #ffffff;
+    padding: 8px 15px;
+    position: relative;
+    bottom: -60px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+figure.snip0005 > div a i:hover {
+    color: #fff;
+}
+figure.snip0005:hover img {
+    opacity: 0.5;
+    top: -60px;
+}
+figure.snip0005:hover > div {
+    bottom: 0;
+    opacity: 1;
+}
+figure.snip0005:hover > div a i {
+    bottom: 0;
+}
+figure.snip0005:hover a:first-child i {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+figure.snip0005:hover a:nth-child(2) i {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+figure.snip0005:hover a:nth-child(3) i {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+
+
+
+figure.snip0006 {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    cursor: pointer;
+}
+figure.snip0006 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+figure.snip0006 img {
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    opacity: 1.0;
+    right: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+figure.snip0006 > div {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    position: absolute;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+figure.snip0006 > div::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    background-color: #000000;
+    opacity: 0;
+    bottom: -58px;
+    left: -84px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: rotate(45deg) translate3d(-100%, 0%, 0);
+    transform: rotate(45deg) translate3d(-100%, 0%, 0);
+}
+figure.snip0006 > div::before {
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 70px;
+    opacity: 0;
+    border-top: 2px solid #ffffff;
+    background-color: #000000;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    bottom: 60px;
+    left: -85px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: rotate(45deg) translate3d(100%, 0%, 0);
+    transform: rotate(45deg) translate3d(100%, 0%, 0);
+}
+figure.snip0006 > div a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+figure.snip0006 > div i:before {
+    display: inline-block;
+    font-size: 60px;
+    color: #ffffff;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    padding: 50px;
+    position: absolute;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    z-index: 1;
+}
+figure.snip0006:hover img {
+    opacity: 0.5;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+figure.snip0006:hover > div {
+    bottom: 0;
+    opacity: 1;
+}
+figure.snip0006:hover > div::after,
+figure.snip0006:hover > div::before {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+figure.snip0006:hover > div::after {
+    -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+    transform: rotate(45deg) translate3d(0, 0, 0);
+    opacity: 1;
+}
+figure.snip0006:hover > div::before {
+    -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+    transform: rotate(45deg) translate3d(0, 0, 0);
+    opacity: 1;
+}
+figure.snip0006:hover > div i::before {
+    opacity: 1;
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+}
+
+
+
+figure.snip0007 {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    cursor: pointer;
+}
+figure.snip0007 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+figure.snip0007 img {
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    opacity: 1.0;
+    right: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+figure.snip0007 > div {
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    position: absolute;
+    color: #ffffff;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+figure.snip0007 > div::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    background-color: #000000;
+    opacity: 0;
+    bottom: -58px;
+    right: -84px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: rotate(-45deg) translate3d(-100%, 0%, 0);
+    transform: rotate(-45deg) translate3d(-100%, 0%, 0);
+}
+figure.snip0007 > div::before {
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 70px;
+    opacity: 0;
+    border-top: 2px solid #ffffff;
+    background-color: #000000;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    bottom: 60px;
+    right: -85px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+    -webkit-transform: rotate(-45deg) translate3d(100%, 0%, 0);
+    transform: rotate(-45deg) translate3d(100%, 0%, 0);
+}
+figure.snip0007 > div a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+figure.snip0007 > div i:before {
+    display: inline-block;
+    font-size: 60px;
+    color: #ffffff;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    padding: 50px;
+    position: absolute;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    z-index: 1;
+}
+figure.snip0007:hover img {
+    opacity: 0.5;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+figure.snip0007:hover > div {
+    bottom: 0;
+    opacity: 1;
+}
+figure.snip0007:hover > div::after {
+    -webkit-transform: rotate(-45deg) translate3d(0, 0, 0);
+    transform: rotate(-45deg) translate3d(0, 0, 0);
+    opacity: 1;
+}
+figure.snip0007:hover > div::before {
+    -webkit-transform: rotate(-45deg) translate3d(0, 0, 0);
+    transform: rotate(-45deg) translate3d(0, 0, 0);
+    opacity: 1;
+}
+figure.snip0007:hover > div i::before {
+    opacity: 1;
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+}
+
+
+
+figure.snip0008 {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    text-align: center;
+    cursor: pointer;
+}
+figure.snip0008 img {
+    max-width: 100%;
+    opacity: 1;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+figure.snip0008 > div a {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #ffffff;
+}
+figure.snip0008 > div a i::before {
+    font-size: 56px;
+    opacity: 0;
+    top: 55%;
+    position: relative;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    display: inline-block;
+}
+figure.snip0008 > div::before {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    bottom: 50%;
+    left: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+    content: '';
+    opacity: 0;
+    background-color: #ffffff;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+figure.snip0008:hover img {
+    opacity: 0.5;
+}
+figure.snip0008:hover > div i:before {
+    opacity: 0.9;
+    top: 50%;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+figure.snip0008:hover > div::before {
+    background: rgba(255, 255, 255, 0);
+    top: 30px;
+    bottom: 30px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+
+
+figure.snip0009 {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    text-align: center;
+    cursor: pointer;
+}
+figure.snip0009 img {
+    max-width: 100%;
+    opacity: 1;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+figure.snip0009 > div a {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #ffffff;
+}
+figure.snip0009 > div a i::before {
+    font-size: 50px;
+    opacity: 0;
+    top: 55%;
+    position: relative;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    display: inline-block;
+}
+figure.snip0009 > div::before {
+    position: absolute;
+    top: 30px;
+    right: 50%;
+    bottom: 30px;
+    left: 50%;
+    border-left: 1px solid rgba(255, 255, 255, 0.8);
+    border-right: 1px solid rgba(255, 255, 255, 0.8);
+    content: '';
+    opacity: 0;
+    background-color: #ffffff;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+figure.snip0009:hover img {
+    opacity: 0.5;
+}
+figure.snip0009:hover > div i::before {
+    opacity: 0.8;
+    top: 50%;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+figure.snip0009:hover > div::before {
+    background: rgba(255, 255, 255, 0);
+    left: 30px;
+    right: 30px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+
+
+figure.snip0010 {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    text-align: center;
+    cursor: pointer;
+}
+figure.snip0010 img {
+    max-width: 100%;
+    opacity: 1;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+figure.snip0010 > div a {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #ffffff;
+}
+figure.snip0010 > div a i::before {
+    font-size: 50px;
+    opacity: 0;
+    top: 55%;
+    position: relative;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    display: inline-block;
+}
+figure.snip0010 > div::before {
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    bottom: 40%;
+    left: 50%;
+    border-left: 1px solid rgba(255, 255, 255, 0.8);
+    border-right: 1px solid rgba(255, 255, 255, 0.8);
+    content: '';
+    opacity: 0;
+    background-color: #ffffff;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+figure.snip0010:hover img {
+    opacity: 0.35;
+}
+figure.snip0010:hover > div i::before {
+    opacity: 0.9;
+    top: 50%;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+figure.snip0010:hover > div::before {
+    background: rgba(255, 255, 255, 0);
+    top: 30px;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+
+
+
+figure.snip0011 {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    text-align: center;
+    cursor: pointer;
+}
+figure.snip0011 img {
+    max-width: 100%;
+    opacity: 1;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+figure.snip0011 > div a {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #ffffff;
+}
+figure.snip0011 > div a i::before {
+    font-size: 50px;
+    opacity: 0;
+    top: 55%;
+    position: relative;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    display: inline-block;
+}
+figure.snip0011 > div::before {
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    bottom: 50%;
+    left: 40%;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    content: '';
+    opacity: 0;
+    background-color: #ffffff;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+figure.snip0011:hover img {
+    opacity: 0.35;
+}
+figure.snip0011:hover > div i::before {
+    opacity: 0.8;
+    top: 50%;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+figure.snip0011:hover > div::before {
+    background: rgba(255, 255, 255, 0);
+    top: 30px;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+
+figure.snip0012 {
+    -webkit-transition: none !important;
+    transition: none !important;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    text-align: center;
+}
+figure.snip0012 img {
+    max-width: 100%;
+    opacity: 1;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+figure.snip0012 > div {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+}
+figure.snip0012 > div a {
+    color: #ffffff;
+}
+figure.snip0012 > div a i {
+    font-size: 44px;
+    opacity: 0;
+    top: 50%;
+    position: relative;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    display: inline-block;
+}
+figure.snip0012 > div a i.left-icon {
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+}
+figure.snip0012 > div a i.right-icon {
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+}
+figure.snip0012 > div::before {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    bottom: 50%;
+    left: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    content: '';
+    opacity: 0;
+    background-color: #ffffff;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+figure.snip0012:hover img {
+    opacity: 0.35;
+}
+figure.snip0012:hover > div i {
+    opacity: 0.9;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+figure.snip0012:hover > div i.left-icon {
+    -webkit-transform: translate3d(-25%, -50%, 0);
+    transform: translate3d(-25%, -50%, 0);
+}
+figure.snip0012:hover > div i.right-icon {
+    -webkit-transform: translate3d(25%, -50%, 0);
+    transform: translate3d(25%, -50%, 0);
+}
+figure.snip0012:hover > div::before {
+    background: rgba(255, 255, 255, 0);
+    top: 30px;
+    bottom: 30px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+
+figure.snip0013 {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    text-align: center;
+}
+figure.snip0013 img {
+    max-width: 100%;
+    opacity: 1;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+figure.snip0013 > div {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+}
+figure.snip0013 > div a {
+    color: #ffffff;
+}
+figure.snip0013 > div a i {
+    font-size: 50px;
+    opacity: 0;
+    top: 50%;
+    position: relative;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    display: inline-block;
+}
+figure.snip0013 > div a i.left-icon {
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+}
+figure.snip0013 > div a i.right-icon {
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+}
+figure.snip0013 > div::before {
+    position: absolute;
+    top: 30px;
+    right: 50%;
+    bottom: 30px;
+    left: 50%;
+    border-left: 1px solid rgba(255, 255, 255, 0.8);
+    border-right: 1px solid rgba(255, 255, 255, 0.8);
+    content: '';
+    opacity: 0;
+    background-color: #ffffff;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+figure.snip0013:hover img {
+    opacity: 0.35;
+}
+figure.snip0013:hover > div i {
+    opacity: 0.9;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+figure.snip0013:hover > div i.left-icon {
+    -webkit-transform: translate3d(-25%, -50%, 0);
+    transform: translate3d(-25%, -50%, 0);
+}
+figure.snip0013:hover > div i.right-icon {
+    -webkit-transform: translate3d(25%, -50%, 0);
+    transform: translate3d(25%, -50%, 0);
+}
+figure.snip0013:hover > div::before {
+    background: rgba(255, 255, 255, 0);
+    left: 30px;
+    right: 30px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+
+
+figure.snip0014 {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    text-align: center;
+}
+figure.snip0014 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+figure.snip0014 img {
+    max-width: 100%;
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+figure.snip0014 figcaption {
+    font-size: 1.25em;
+}
+figure.snip0014 > div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3em 3em;
+    width: 100%;
+    height: 100%;
+}
+figure.snip0014 > div::before {
+    position: absolute;
+    top: 30px;
+    right: 50%;
+    bottom: 30px;
+    left: 50%;
+    border-left: 1px solid rgba(255, 255, 255, 0.8);
+    border-right: 1px solid rgba(255, 255, 255, 0.8);
+    content: '';
+    opacity: 0;
+    background-color: #ffffff;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+figure.snip0014 h2,
+figure.snip0014 p {
+    margin: 0 0 5px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+}
+figure.snip0014 h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    text-transform: uppercase;
+    -webkit-transform: translate3d(0%, 100%, 0);
+    transform: translate3d(0%, 100%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+figure.snip0014 h2 span {
+    font-weight: 800;
+}
+figure.snip0014 p {
+    font-weight: 200  ;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+figure.snip0014 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    color: #ffffff;
+}
+figure.snip0014:hover img {
+    opacity: 0.35;
+}
+figure.snip0014:hover > div h2 {
+    opacity: 1;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+figure.snip0014:hover > div p {
+    opacity: 0.8;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+figure.snip0014:hover > div::before {
+    background: rgba(255, 255, 255, 0);
+    left: 30px;
+    right: 30px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+
+figure.snip0015 {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    text-align: center;
+}
+figure.snip0015 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+figure.snip0015 img {
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+figure.snip0015 figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3em 3em;
+    width: 100%;
+    height: 100%;
+}
+figure.snip0015 figcaption::before {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    bottom: 50%;
+    left: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    content: '';
+    opacity: 0;
+    background-color: #ffffff;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+figure.snip0015 h2,
+figure.snip0015 p {
+    margin: 0 0 5px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+}
+figure.snip0015 h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    text-transform: uppercase;
+    -webkit-transform: translate3d(0%, 50%, 0);
+    transform: translate3d(0%, 50%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+figure.snip0015 h2 span {
+    font-weight: 800;
+}
+figure.snip0015 p {
+    font-weight: 200  ;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+figure.snip0015 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    color: #ffffff;
+}
+figure.snip0015:hover img {
+    opacity: 0.35;
+}
+figure.snip0015:hover figcaption h2 {
+    opacity: 1;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+figure.snip0015:hover figcaption p {
+    opacity: 0.9;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+figure.snip0015:hover figcaption::before {
+    background: rgba(255, 255, 255, 0);
+    top: 30px;
+    bottom: 30px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+figure.snip0016 {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    text-align: left;
+}
+figure.snip0016 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+figure.snip0016 img {
+    max-width: 100%;
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+figure.snip0016 figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px 3em;
+    width: 100%;
+    height: 100%;
+}
+figure.snip0016 figcaption::before {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 100%;
+    border-left: 4px solid rgba(255, 255, 255, 0.8);
+    content: '';
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+figure.snip0016 h2,
+figure.snip0016 p {
+    margin: 0 0 5px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+}
+figure.snip0016 h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    text-transform: uppercase;
+    -webkit-transform: translate3d(30%, 0%, 0);
+    transform: translate3d(30%, 0%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+figure.snip0016 h2 span {
+    font-weight: 800;
+}
+figure.snip0016 p {
+    font-weight: 200;
+    -webkit-transform: translate3d(0%, 30%, 0);
+    transform: translate3d(0%, 30%, 0);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+figure.snip0016 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    color: #ffffff;
+}
+figure.snip0016:hover img {
+    opacity: 0.3;
+}
+figure.snip0016:hover figcaption h2 {
+    opacity: 1;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+figure.snip0016:hover figcaption p {
+    opacity: 0.9;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+figure.snip0016:hover figcaption::before {
+    background: rgba(255, 255, 255, 0);
+    left: 30px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+
+figure.snip0017 {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    text-align: right;
+}
+figure.snip0017 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+figure.snip0017 img {
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+figure.snip0017 figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px 3em;
+    width: 100%;
+    height: 100%;
+}
+figure.snip0017 figcaption::before {
+    position: absolute;
+    top: 30px;
+    right: 100%;
+    bottom: 30px;
+    left: 30px;
+    border-right: 4px solid rgba(255, 255, 255, 0.8);
+    content: '';
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+figure.snip0017 h2,
+figure.snip0017 p {
+    margin: 0 0 5px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+}
+figure.snip0017 h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    text-transform: uppercase;
+    -webkit-transform: translate3d(-30%, 0%, 0);
+    transform: translate3d(-30%, 0%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+figure.snip0017 h2 span {
+    font-weight: 800;
+}
+figure.snip0017 p {
+    font-weight: 200;
+    -webkit-transform: translate3d(0%, -30%, 0);
+    transform: translate3d(0%, -30%, 0);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+figure.snip0017 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    color: #ffffff;
+}
+figure.snip0017:hover img {
+    opacity: 0.3;
+}
+figure.snip0017:hover figcaption h2,
+figure.snip0017:hover figcaption p {
+    visibility: visible;
+}
+figure.snip0017:hover figcaption h2 {
+    opacity: 1;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+figure.snip0017:hover figcaption p {
+    opacity: 0.9;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+figure.snip0017:hover figcaption::before {
+    background: rgba(255, 255, 255, 0);
+    right: 30px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
 }

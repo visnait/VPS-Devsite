@@ -1,0 +1,236 @@
+{namespace flux=FluidTYPO3\Flux\ViewHelpers}
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+{namespace cs2=TYPO3\TemplateGlobal\ViewHelpers}
+<f:layout name="Content" />
+
+<f:section name="Configuration">
+
+    <v:variable.set name="icons" value="{
+         0:{0:'Add',1:'ion-android-add'},
+         1:{0:'Open',1:'ion-android-open'},
+         2:{0:'Star',1:'ion-android-star-outline'},
+         3:{0:'Watch',1:'ion-android-stopwatch'},
+         4:{0:'Camera',1:'ion-ios-camera-outline'},
+         5:{0:'Download',1:'ion-ios-download-outline'},
+         6:{0:'Search',1:'ion-ios-search'}
+         }"
+    />
+
+    <flux:form id="snippetsmaster" label="Snippets Master">
+    <flux:field.select label="Effect" name="effect" maxItems="1" size="1" items="{
+                           0:{0:'Snippets 1001 - Simple image hover effect with a single icon fade in.',1:'1001'},
+                           1:{0:'Snippets 1002 - A simple image zoom hover effect with a single icon',1:'1002'},
+                           2:{0:'Snippets 1003 - Simple image hover effect with some icons sliding in from the right',1:'1003'},
+                           3:{0:'Snippets 1004 - Simple image hover effect with some icons from the left.',1:'1004'},
+                           4:{0:'Snippets 1005 - A simple image hover effect with some icons sliding in from the bottom.',1:'1005'},
+                           5:{0:'Snippets 1006 - Image hover effect with a single icon on a bottom left corner overlay.',1:'1006'},
+                           6:{0:'Snippets 1007 - Image hover effect with a single icon on a bottom right corner overlay.',1:'1007'},
+                           7:{0:'Snippets 1008 - Image with horizontal expanding lines displaying single icon on hover.',1:'1008'},
+                           8:{0:'Snippets 1009 - Image with vertical expanding lines displaying a single icon on hover.',1:'1009'},
+                           9:{0:'Snippets 1010 - Image with rotating right expanding lines displaying single icon on hover.',1:'1010'},
+                           10:{0:'Snippets 1011 - Image with rotating left expanding lines displaying single icon on hover.',1:'1011'},
+                           11:{0:'Snippets 1012 - Image with horizontal expanding lines displaying multiple icons on hover.',1:'1012'},
+                           12:{0:'Snippets 1013 - Image with vertical expanding lines displaying multiple icons on hover.',1:'1013'},
+                           13:{0:'Snippets 1014 - Image hover effect. Expanding vertical lines to display title and description.',1:'1014'},
+                           14:{0:'Snippets 1015 - Image hover effect. Expanding horizontal lines to display title and description.',1:'1015'},
+                           15:{0:'Snippets 1016 - Image hover effect. Sliding line to the left to display title and description.',1:'1016'},
+                           16:{0:'Snippets 1017 - Image hover effect. Sliding line to the right to display title and description.',1:'1017'}
+                           }" default="1001"/>
+
+
+
+        <flux:field.select label="Icon" name="icon" maxItems="1" size="1" items="{icons}" default="ion-android-add"/>
+        <flux:field.select label="Icon 2" name="icon2" maxItems="1" size="1" items="{icons}" default="ion-android-add"/>
+        <flux:field.select label="Icon 3" name="icon3" maxItems="1" size="1" items="{icons}" default="ion-android-add"/>
+        <flux:field.input name="title" label="Title" />
+        <flux:field.input name="subtitle" label="Sub title" />
+        <flux:field.text name="text" label="Text" />
+        <flux:field.inline.fal name="image" allowedExtensions="jpg,png" maxItems="1" minItems="1" label="Image"/>
+    </flux:form>
+</f:section>
+
+<f:section name="Preview">
+    <div class="preview-container">
+        <p>Snippets</p>
+    </div>
+</f:section>
+
+<f:section name="Main">
+    {v:content.resources.fal(field: 'image') -> v:iterator.first() -> v:variable.set(name: 'image')}
+    <div class="snippets_cont">
+
+    <f:if condition="{effect} =='1001'">
+    <figure class="snip0001">
+        <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320"/>
+        <div>
+            <a href="#"><i class="{icon}"></i></a>
+        </div>
+    </figure>
+    </f:if>
+
+    <f:if condition="{effect} =='1002'">
+    <figure class="snip0002">
+        <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320"/>
+        <div>
+            <a href="#"><i class="{icon}"></i></a>
+        </div>
+    </figure>
+    </f:if>
+
+    <f:if condition="{effect} =='1003'">
+    <figure class="snip0003">
+        <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320c"/>
+        <div>
+            <f:if condition="{icon}"><a href="#"><i class="{icon}"></i></a></f:if>
+            <f:if condition="{icon2}"><a href="#"><i class="{icon2}"></i></a></f:if>
+            <f:if condition="{icon3}"><a href="#"><i class="{icon3}"></i></a></f:if>
+        </div>
+    </figure>
+    </f:if>
+
+    <f:if condition="{effect} =='1004'">
+    <figure class="snip0004">
+        <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320c"/>
+        <div>
+            <f:if condition="{icon}"><a href="#"><i class="{icon}"></i></a></f:if>
+            <f:if condition="{icon2}"><a href="#"><i class="{icon2}"></i></a></f:if>
+            <f:if condition="{icon3}"><a href="#"><i class="{icon3}"></i></a></f:if>
+        </div>
+    </figure>
+    </f:if>
+
+    <f:if condition="{effect} =='1005'">
+    <figure class="snip0005">
+        <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320c"/>
+        <div>
+            <f:if condition="{icon}"><a href="#"><i class="{icon}"></i></a></f:if>
+            <f:if condition="{icon2}"><a href="#"><i class="{icon2}"></i></a></f:if>
+            <f:if condition="{icon3}"><a href="#"><i class="{icon3}"></i></a></f:if>
+        </div>
+    </figure>
+    </f:if>
+
+    <f:if condition="{effect} =='1006'">
+    <figure class="snip0006">
+        <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320c"/>
+        <div>
+            <f:if condition="{icon}"><i class="{icon}"></i></f:if>
+            <a href="#"></a>
+        </div>
+    </figure>
+    </f:if>
+
+    <f:if condition="{effect} =='1007'">
+    <figure class="snip0007">
+        <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320c"/>
+        <div>
+            <f:if condition="{icon}"><i class="{icon}"></i></f:if>
+            <a href="#"></a>
+        </div>
+    </figure>
+    </f:if>
+
+    <f:if condition="{effect} =='1008'">
+        <figure class="snip0008">
+            <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320"/>
+            <div>
+                <a href="#"><i class="{icon}"></i></a>
+            </div>
+        </figure>
+    </f:if>
+
+    <f:if condition="{effect} =='1009'">
+        <figure class="snip0009">
+            <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320"/>
+            <div>
+                <a href="#"><i class="{icon}"></i></a>
+            </div>
+        </figure>
+    </f:if>
+
+    <f:if condition="{effect} =='1010'">
+        <figure class="snip0010">
+            <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320"/>
+            <div>
+                <a href="#"><i class="{icon}"></i></a>
+            </div>
+        </figure>
+    </f:if>
+
+    <f:if condition="{effect} =='1011'">
+        <figure class="snip0011">
+            <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320"/>
+            <div>
+                <a href="#"><i class="{icon}"></i></a>
+            </div>
+        </figure>
+    </f:if>
+
+    <f:if condition="{effect} =='1012'">
+        <figure class="snip0012">
+            <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320"/>
+            <div>
+                <a href="#"><i class="{icon} left-icon"></i></a>
+                <a href="#"><i class="{icon2} right-icon"></i></a>
+            </div>
+        </figure>
+    </f:if>
+
+    <f:if condition="{effect} =='1013'">
+        <figure class="snip0013">
+            <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320m"/>
+            <div>
+                <a href="#"><i class="{icon} left-icon"></i></a>
+                <a href="#"><i class="{icon2} right-icon"></i></a>
+            </div>
+        </figure>
+    </f:if>
+
+    <f:if condition="{effect} =='1014'">
+        <figure class="snip0014">
+            <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320m"/>
+            <div>
+                <h2><f:format.html>{title}</f:format.html></h2>
+                <p>{text}</p>
+                <a href="#"></a>
+            </div>
+        </figure>
+    </f:if>
+
+    <f:if condition="{effect} =='1015'">
+        <figure class="snip0015">
+            <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320m"/>
+            <figcaption>
+                <h2><f:format.html>{title}</f:format.html></h2>
+                <p>{text}</p>
+                <a href="#"></a>
+            </figcaption>
+        </figure>
+    </f:if>
+
+    <f:if condition="{effect} =='1016'">
+    <figure class="snip0016">
+        <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+        <figcaption>
+            <h2><f:format.html>{title}</f:format.html></h2>
+            <p>{text}</p>
+            <a href="#"></a>
+        </figcaption>
+    </figure>
+    </f:if>
+
+    <f:if condition="{effect} =='1017'">
+    <figure class="snip0017">
+        <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+        <figcaption>
+            <h2><f:format.html>{title}</f:format.html></h2>
+            <p>{text}</p>
+            <a href="#"></a>
+        </figcaption>
+    </figure>
+    </f:if>
+
+
+    </div>
+
+</f:section>
