@@ -8,12 +8,17 @@
     <v:variable.set name="icons" value="{
          0:{0:'Add',1:'ion-android-add'},
          1:{0:'Open',1:'ion-android-open'},
-         2:{0:'Star',1:'ion-android-star-outline'},
+         2:{0:'A Star',1:'ion-android-star-outline'},
          3:{0:'Watch',1:'ion-android-stopwatch'},
          4:{0:'Camera',1:'ion-ios-camera-outline'},
          5:{0:'Download',1:'ion-ios-download-outline'},
          6:{0:'Search',1:'ion-ios-search'},
-         7:{0:'Play',1:'ion-ios-play-outline'}
+         7:{0:'Play',1:'ion-ios-play-outline'},
+         8:{0:'Image',1:'ion-image'},
+         9:{0:'Person add',1:'ion-person-add'},
+         10:{0:'Map',1:'ion-map'},
+         11:{0:'Loop',1:'ion-ios-loop-strong'},
+         12:{0:'Star Outline',1:'ion-ios-star-outline'}
          }"/>
 
     <flux:form id="snippetsmaster" label="Snippets Master">
@@ -42,7 +47,17 @@
            21:{0:'Snippets 1022',1:'1022'},
            22:{0:'Snippets 1023',1:'1023'},
            23:{0:'Snippets 1024',1:'1024'},
-           24:{0:'Snippets 1025',1:'1025'}
+           24:{0:'Snippets 1025',1:'1025'},
+           25:{0:'Snippets 1026',1:'1026'},
+           26:{0:'Snippets 1027',1:'1027'},
+           27:{0:'Snippets 1028',1:'1028'},
+           28:{0:'Snippets 1029',1:'1029'},
+           29:{0:'Snippets 1030',1:'1030'},
+           30:{0:'Snippets 1031',1:'1031'},
+           31:{0:'Snippets 1032',1:'1032'},
+           32:{0:'Snippets 1033',1:'1033'},
+           33:{0:'Snippets 1034',1:'1034'},
+           34:{0:'Snippets 1035',1:'1035'}
            }" default="1001"/>
 
         <flux:field.select label="Icon"   name="icon"  maxItems="1" size="1" items="{icons}" default="ion-android-add"/>
@@ -84,10 +99,16 @@
             <f:case value="1023"><p>Simple image hover effect with bottom left page curl displaying a single icon</p></f:case>
             <f:case value="1024"><p>Simple image hover effect displaying a caption with bottom right page curl revealing a single icon</p></f:case>
             <f:case value="1025"><p>image hover effect displaying a caption with bottom left page curl revealing a single icon</p></f:case>
-            <f:case value="1026"><p></p></f:case>
-            <f:case value="1027"><p></p></f:case>
-            <f:case value="1028"><p></p></f:case>
-            <f:case value="1029"><p></p></f:case>
+            <f:case value="1026"><p>Image hover effect with sliding background from right to display two tone caption</p></f:case>
+            <f:case value="1027"><p>Image hover effect with sliding background from left to display two tone caption</p></f:case>
+            <f:case value="1028"><p>Image hover effect with slide in caption and icons</p></f:case>
+            <f:case value="1029"><p>Image hover effect with caption and slide down icons</p></f:case>
+            <f:case value="1030"><p>Simple image hover effect with a single rotating icon</p></f:case>
+            <f:case value="1031"><p>Image hover effect with rotating right icon to displaying caption and icons</p></f:case>
+            <f:case value="1032"><p>Image hover effect with rotating left icon to displaying caption and icons</p></f:case>
+            <f:case value="1033"><p>Image hover effect with rotating right icon to displaying a split caption</p></f:case>
+            <f:case value="1034"><p></p></f:case>
+            <f:case value="1035"><p></p></f:case>
         </f:switch>
     </div>
 </f:section>
@@ -340,15 +361,125 @@
             </figure>
         </f:case>
         <f:case value="1026">
-
+            <figure class="snip0026">
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+                <figcaption>
+                    <div><h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2></div>
+                    <div><p>{text}</p></div>
+                    <a href="#"></a>
+                </figcaption>
+            </figure>
         </f:case>
         <f:case value="1027">
-
+            <figure class="snip0027">
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+                <figcaption>
+                    <div><p>{text}</p></div>
+                    <div><h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></div>
+                    <a href="#"></a>
+                </figcaption>
+            </figure>
         </f:case>
         <f:case value="1028">
-
+            <figure class="snip0028">
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+                <figcaption>
+                    <div>
+                        <a href="#"><i class="{icon}"></i></a>
+                        <a href="#"><i class="{icon2}"></i></a>
+                        <a href="#"><i class="{icon3}"></i></a>
+                    </div>
+                    <h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2>
+                </figcaption>
+            </figure>
         </f:case>
         <f:case value="1029">
+            <figure class="snip0029">
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+                <figcaption>
+                    <div>
+                        <a href="#"><i class="{icon}"></i></a>
+                        <a href="#"><i class="{icon2}"></i></a>
+                        <a href="#"><i class="{icon3}"></i></a>
+                    </div>
+                    <h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2>
+                </figcaption>
+            </figure>
+        </f:case>
+
+        <f:case value="1030">
+            <figure class="snip0030">
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+                <div>
+                    <i class="{icon}"></i>
+                </div>
+                <a href="#"></a>
+            </figure>
+        </f:case>
+
+        <f:case value="1031">
+            <figure class="snip0031">
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+                <figcaption>
+                    <div>
+                        <h3>{title}</h3>
+                    </div>
+                    <div>
+                        <div class="icons">
+                            <a href="#"><i class="{icon}"></i></a>
+                            <a href="#"><i class="{icon2}"></i></a>
+                            <a href="#"><i class="{icon3}"></i></a>
+                        </div>
+                    </div>
+                </figcaption>
+                <div class="center">
+                    <i class="ion-ios-loop-strong"></i>
+                </div>
+            </figure>
+        </f:case>
+
+        <f:case value="1032">
+            <figure class="snip0032">
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+                <figcaption>
+                    <div>
+                        <h3>{title}</h3>
+                    </div>
+                    <div>
+                        <div class="icons">
+                            <a href="#"><i class="{icon}"></i></a>
+                            <a href="#"><i class="{icon2}"></i></a>
+                            <a href="#"><i class="{icon3}"></i></a>
+                        </div>
+                    </div>
+                </figcaption>
+                <div class="center">
+                    <i class="ion-ios-loop-strong"></i>
+                </div>
+            </figure>
+        </f:case>
+
+        <f:case value="1033">
+            <figure class="snip1033">
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+                <figcaption>
+                    <div class="left">
+                        <h3>{title}</h3>
+                    </div>
+                    <div class="right">
+                        <h3 class="white">{subtitle}</h3>
+                    </div>
+                </figcaption>
+                <div class="center"><i class="ion-ios-loop-strong"></i></div>
+                <a href="#"></a>
+            </figure>
+        </f:case>
+
+        <f:case value="1034">
+
+        </f:case>
+
+        <f:case value="1035">
 
         </f:case>
 

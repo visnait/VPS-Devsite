@@ -2694,3 +2694,1038 @@ figure.snip0025.hover .curl {
 }
 
 
+figure.snip0026 {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    text-align: center;
+}
+figure.snip0026 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+figure.snip0026 img {
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: opacity 0.35s, scale(1);
+    transition: opacity 0.35s, scale(1);
+}
+figure.snip0026 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+figure.snip0026 figcaption > div {
+    float: left;
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+figure.snip0026 figcaption::before {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 100%;
+    right: 5px;
+    content: '';
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+figure.snip0026 h2,
+figure.snip0026 p {
+    margin: 0;
+    padding: 20px;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    -webkit-transition: opacity 0.45s, -webkit-transform 0.3s ease-in;
+    transition: opacity 0.45s,-webkit-transform 0.3s ease-in,-moz-transform 0.3s ease-in,-o-transform 0.3s ease-in,transform 0.3s ease-in;
+}
+figure.snip0026 h2 {
+    font-size: 1.3em;
+    top: 0;
+    text-align: right;
+    word-spacing: -0.1em;
+    font-weight: 300;
+    text-transform: uppercase;
+    bottom: 0;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-transform: translate3d(-50%, 0%, 0);
+    transform: translate3d(-50%, 0%, 0);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+figure.snip0026 h2 span {
+    font-weight: 800;
+}
+figure.snip0026 p {
+    bottom: 0;
+    color: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+figure.snip0026 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    color: #ffffff;
+}
+figure.snip0026:hover img,
+figure.snip0026.hover img {
+    opacity: 0.7;
+}
+figure.snip0026:hover figcaption h2,
+figure.snip0026.hover figcaption h2 {
+    opacity: 1;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+figure.snip0026:hover figcaption p,
+figure.snip0026.hover figcaption p {
+    opacity: 1;
+    -webkit-transition-delay: 0.8s;
+    transition-delay: 0.8s;
+}
+figure.snip0026:hover figcaption::before,
+figure.snip0026.hover figcaption::before {
+    left: 5px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+
+
+figure.snip0027 {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    text-align: center;
+}
+figure.snip0027 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+figure.snip0027 img {
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+figure.snip0027 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+figure.snip0027 figcaption > div {
+    float: left;
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+figure.snip0027 figcaption::before {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 100%;
+    left: 5px;
+    content: '';
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+figure.snip0027 h2,
+figure.snip0027 p {
+    margin: 0;
+    padding: 20px;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    -webkit-transition: opacity 0.45s, -webkit-transform 0.3s ease-in;
+    transition: opacity 0.45s,-webkit-transform 0.3s ease-in,-moz-transform 0.3s ease-in,-o-transform 0.3s ease-in,transform 0.3s ease-in;
+}
+figure.snip0027 h2 {
+    font-size: 1.3em;
+    top: 0;
+    word-spacing: -0.1em;
+    font-weight: 300;
+    text-transform: uppercase;
+    bottom: 0;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-transform: translate3d(50%, 0%, 0);
+    transform: translate3d(50%, 0%, 0);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+figure.snip0027 h2 span {
+    font-weight: 800;
+}
+figure.snip0027 p {
+    bottom: 0;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+figure.snip0027 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    color: #ffffff;
+}
+figure.snip0027:hover img,
+figure.snip0027.hover img {
+    opacity: 0.7;
+}
+figure.snip0027:hover figcaption h2,
+figure.snip0027.hover figcaption h2 {
+    opacity: 1;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+figure.snip0027:hover figcaption p,
+figure.snip0027.hover figcaption p {
+    opacity: 1;
+    -webkit-transition-delay: 0.8s;
+    transition-delay: 0.8s;
+}
+figure.snip0027:hover figcaption::before,
+figure.snip0027.hover figcaption::before {
+    right: 5px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+
+
+figure.snip0028 {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+}
+figure.snip0028 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+figure.snip0028 img {
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+figure.snip0028 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+figure.snip0028 figcaption > div {
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    bottom: 28px;
+    left: 100%;
+    padding: 7px 10px;
+    border-radius: 0 0 0 5px;
+    -webkit-transition: left 0.35s;
+    transition: left 0.35s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+figure.snip0028 figcaption > div i {
+    font-size: 23px;
+    padding: 6px;
+    color: #000000;
+    opacity: 0.6;
+    position: relative;
+    right: -150px;
+    -webkit-transition: right 0.35s, opacity 0.35s;
+    transition: right 0.35s, opacity 0.35s;
+}
+figure.snip0028 figcaption > div a {
+    opacity: 0.7;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+figure.snip0028 figcaption > div a:hover {
+    opacity: 1;
+}
+figure.snip0028 figcaption::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    background-image: linear-gradient(to top, #000000 0%, transparent 50%, #000000 100%);
+}
+figure.snip0028 h2 {
+    border-radius: 0 5px 0 0;
+    text-align: right;
+    margin: 0;
+    padding: 20px;
+    position: absolute;
+    font-size: 1em;
+    bottom: 70px;
+    right: 100%;
+    width: 90%;
+    word-spacing: -0.1em;
+    font-weight: 300;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: #000000;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+figure.snip0028 h2 span {
+    font-weight: 800;
+}
+figure.snip0028:hover img,
+figure.snip0028.hover img {
+    opacity: 0.7;
+}
+figure.snip0028:hover figcaption > div,
+figure.snip0028.hover figcaption > div {
+    left: 35%;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+figure.snip0028:hover figcaption h2,
+figure.snip0028.hover figcaption h2 {
+    right: 30px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+figure.snip0028:hover figcaption::before,
+figure.snip0028.hover figcaption::before {
+    opacity: 0.8;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+figure.snip0028:hover figcaption i,
+figure.snip0028.hover figcaption i {
+    right: 0px;
+}
+figure.snip0028:hover a:first-child i,
+figure.snip0028.hover a:first-child i {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+figure.snip0028:hover a:nth-child(2) i,
+figure.snip0028.hover a:nth-child(2) i {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+figure.snip0028:hover a:nth-child(3) i,
+figure.snip0028.hover a:nth-child(3) i {
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+
+
+figure.snip0029 {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+}
+figure.snip0029 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+figure.snip0029 img {
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+figure.snip0029 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+figure.snip0029 figcaption h2 {
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0;
+    padding: 20px 15px;
+    position: absolute;
+    font-size: 1em;
+    bottom: 35%;
+    right: 30px;
+    left: 30px;
+    word-spacing: -0.1em;
+    font-weight: 300;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.85);
+    background-color: #000000;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: -webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+figure.snip0029 figcaption h2 span {
+    font-weight: 800;
+}
+figure.snip0029 figcaption > div {
+    border-radius: 0 0 5px 5px;
+    background-color: #fff;
+    position: absolute;
+    left: 45px;
+    right: 45px;
+    bottom: 40px;
+    text-align: center;
+    padding: 5px;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: -webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+    -webkit-transform: translate(0, -40px);
+    transform: translate(0, -40px);
+}
+figure.snip0029 figcaption > div i {
+    font-size: 23px;
+    padding: 6px;
+    color: #000000;
+    opacity: 0;
+    position: relative;
+    top: -50px;
+    -webkit-transition: top 0.35s, opacity 0.35s;
+    transition: top 0.35s, opacity 0.35s;
+}
+figure.snip0029 figcaption a {
+    opacity: 0.8;
+}
+figure.snip0029 figcaption a:hover {
+    opacity: 1;
+}
+figure.snip0029 figcaption::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+    background-image: linear-gradient(to top, #000000 0%, transparent 50%, #000000 100%);
+}
+figure.snip0029:hover img,
+figure.snip0029.hover img {
+    opacity: 0.7;
+}
+figure.snip0029:hover figcaption h2,
+figure.snip0029.hover figcaption h2 {
+    -webkit-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+}
+figure.snip0029:hover figcaption > div,
+figure.snip0029.hover figcaption > div {
+    -webkit-transform: translate(0, -15px);
+    transform: translate(0, -15px);
+}
+figure.snip0029:hover figcaption::before,
+figure.snip0029.hover figcaption::before {
+    opacity: 0.8;
+}
+figure.snip0029:hover figcaption i,
+figure.snip0029.hover figcaption i {
+    top: 0px;
+    opacity: 0.7;
+}
+figure.snip0029:hover a:first-child i,
+figure.snip0029.hover a:first-child i {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+figure.snip0029:hover a:nth-child(2) i,
+figure.snip0029.hover a:nth-child(2) i {
+    -webkit-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+}
+figure.snip0029:hover a:nth-child(3) i,
+figure.snip0029.hover a:nth-child(3) i {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+
+
+
+figure.snip0030 {
+    color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+}
+figure.snip0030 img {
+    opacity: 1;
+    width: 100%;
+    position: relative;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+figure.snip0030 > div {
+    border-radius: 5px;
+    display: block;
+    content: '';
+    position: absolute;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    height: 70px;
+    width: 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+figure.snip0030 > div i {
+    font-size: 38px;
+    padding: 6px;
+    color: #ffffff;
+    line-height: 70px;
+    opacity: 0.7;
+}
+figure.snip0030 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+figure.snip0030:hover img,
+figure.snip0030.hover img {
+    opacity: 0.5;
+}
+figure.snip0030:hover > div,
+figure.snip0030.hover > div {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+
+figure.snip0031 {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+}
+figure.snip0031 img {
+    opacity: 1;
+    width: 100%;
+    position: relative;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+figure.snip0031 .center {
+    border-radius: 5px;
+    display: block;
+    content: '';
+    position: absolute;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    height: 70px;
+    width: 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+figure.snip0031 .center i {
+    font-size: 38px;
+    padding: 6px;
+    color: #ffffff;
+    line-height: 70px;
+    opacity: 0.3;
+}
+figure.snip0031 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+figure.snip0031 figcaption > div {
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    width: 50%;
+    position: relative;
+}
+figure.snip0031 figcaption > div .icons {
+    bottom: 50%;
+    position: absolute;
+    padding-left: 30px;
+    -webkit-transform: translate(0%, -20px);
+    transform: translate(0%, -20px);
+}
+figure.snip0031 figcaption > div .icons i {
+    color: #fff;
+    padding: 4px;
+    font-size: 22px;
+    position: relative;
+    left: -150px;
+    opacity: 0;
+    -webkit-transition: opacity 0.45s, left 0.45s;
+    transition: opacity 0.45s, left 0.45s;
+}
+figure.snip0031 figcaption a {
+    opacity: 0.7;
+}
+figure.snip0031 figcaption a:hover {
+    opacity: 1;
+}
+figure.snip0031 h3 {
+    background-color: #222;
+    border-radius: 5px 0 0 5px;
+    word-spacing: -0.1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1em;
+    top: 50%;
+    right: 0;
+    padding: 4px 35px 4px 10px;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.45s, -webkit-transform 0.45s;
+    transition: opacity 0.45s,-webkit-transform 0.45s,-moz-transform 0.45s,-o-transform 0.45s,transform 0.45s;
+    -webkit-transform: translate(100%, 0px);
+    transform: translate(100%, 0px);
+}
+figure.snip0031 .red {
+    background-color: #8c212a;
+}
+figure.snip0031 .yellow {
+    background-color: #945600;
+}
+figure.snip0031:hover img,
+figure.snip0031.hover img {
+    opacity: 0.5;
+}
+figure.snip0031:hover figcaption .icons i,
+figure.snip0031.hover figcaption .icons i {
+    left: 0;
+    opacity: 1;
+}
+figure.snip0031:hover .center,
+figure.snip0031.hover .center {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+figure.snip0031:hover .center i,
+figure.snip0031.hover .center i {
+    -webkit-transform: translate(0%, -10px);
+    transform: translate(0%, -10px);
+}
+figure.snip0031:hover h3,
+figure.snip0031.hover h3 {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0px);
+    transform: translate(0%, 0px);
+}
+figure.snip0031:hover a:first-child i,
+figure.snip0031.hover a:first-child i {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+figure.snip0031:hover a:nth-child(2) i,
+figure.snip0031.hover a:nth-child(2) i {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+figure.snip0031:hover a:nth-child(3) i,
+figure.snip0031.hover a:nth-child(3) i {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+
+
+figure.snip0032 {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+}
+figure.snip0032 img {
+    opacity: 1;
+    width: 100%;
+    position: relative;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+figure.snip0032 .center {
+    border-radius: 5px;
+    display: block;
+    content: '';
+    position: absolute;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    height: 70px;
+    width: 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+figure.snip0032 .center i {
+    font-size: 38px;
+    padding: 6px;
+    color: #ffffff;
+    line-height: 70px;
+    opacity: 0.3;
+}
+figure.snip0032 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+figure.snip0032 figcaption > div {
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    width: 50%;
+    position: relative;
+}
+figure.snip0032 figcaption > div .icons {
+    top: 50%;
+    position: absolute;
+    padding-left: 30px;
+    -webkit-transform: translate(0%, 20px);
+    transform: translate(0%, 20px);
+}
+figure.snip0032 figcaption > div .icons i {
+    color: #fff;
+    padding: 4px;
+    font-size: 22px;
+    position: relative;
+    left: -150px;
+    opacity: 0;
+    -webkit-transition: opacity 0.45s, left 0.45s;
+    transition: opacity 0.45s, left 0.45s;
+}
+figure.snip0032 figcaption a {
+    opacity: 0.7;
+}
+figure.snip0032 figcaption a:hover {
+    opacity: 1;
+}
+figure.snip0032 h3 {
+    background-color: #222;
+    border-radius: 5px 0 0 5px;
+    word-spacing: -0.1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1em;
+    bottom: 50%;
+    right: 0;
+    padding: 4px 35px 4px 10px;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.45s, -webkit-transform 0.45s;
+    transition: opacity 0.45s,-webkit-transform 0.45s,-moz-transform 0.45s,-o-transform 0.45s,transform 0.45s;
+    -webkit-transform: translate(100%, 0px);
+    transform: translate(100%, 0px);
+}
+figure.snip0032 .red {
+    background-color: #8c212a;
+}
+figure.snip0032 .yellow {
+    background-color: #945600;
+}
+figure.snip0032:hover img,
+figure.snip0032.hover img {
+    opacity: 0.5;
+}
+figure.snip0032:hover figcaption .icons i,
+figure.snip0032.hover figcaption .icons i {
+    left: 0;
+    opacity: 1;
+}
+figure.snip0032:hover .center,
+figure.snip0032.hover .center {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+figure.snip0032:hover .center i,
+figure.snip0032.hover .center i {
+    -webkit-transform: translate(0%, -10px);
+    transform: translate(0%, -10px);
+}
+figure.snip0032:hover h3,
+figure.snip0032.hover h3 {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0px);
+    transform: translate(0%, 0px);
+}
+figure.snip0032:hover a:first-child i,
+figure.snip0032.hover a:first-child i {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+figure.snip0032:hover a:nth-child(2) i,
+figure.snip0032.hover a:nth-child(2) i {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+figure.snip0032:hover a:nth-child(3) i,
+figure.snip0032.hover a:nth-child(3) i {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+
+
+figure.snip1033 {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+}
+figure.snip1033 img {
+    opacity: 1;
+    width: 100%;
+    position: relative;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+figure.snip1033 .center {
+    border-radius: 5px;
+    display: block;
+    content: '';
+    position: absolute;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    height: 70px;
+    width: 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+figure.snip1033 .center i {
+    font-size: 38px;
+    padding: 6px;
+    color: #ffffff;
+    line-height: 70px;
+    opacity: 0.3;
+}
+figure.snip1033 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+figure.snip1033 figcaption > div {
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    width: 50%;
+    position: relative;
+}
+figure.snip1033 figcaption a {
+    opacity: 0.7;
+}
+figure.snip1033 figcaption a:hover {
+    opacity: 1;
+}
+figure.snip1033 figcaption h3 {
+    background-color: #222;
+    word-spacing: -0.1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1em;
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: opacity 0.45s, -webkit-transform 0.45s;
+    transition: opacity 0.45s,-webkit-transform 0.45s,-moz-transform 0.45s,-o-transform 0.45s,transform 0.45s;
+}
+figure.snip1033 figcaption .left h3 {
+    border-radius: 5px 0 0 5px;
+    top: 50%;
+    padding: 4px 35px 4px 10px;
+    right: 0;
+    -webkit-transform: translate(100%, 0px);
+    transform: translate(100%, 0px);
+}
+figure.snip1033 figcaption .right h3 {
+    border-radius: 0 5px 5px 0;
+    bottom: 50%;
+    padding: 4px 10px 4px 35px;
+    padding-left: 30px;
+    -webkit-transform: translate(-100%, 0px);
+    transform: translate(-100%, 0px);
+}
+figure.snip1033 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+figure.snip1033 .red {
+    background-color: #8c212a;
+}
+figure.snip1033 .yellow {
+    background-color: #945600;
+}
+figure.snip1033 .white {
+    background-color: #ffffff;
+    color: #444444;
+}
+figure.snip1033:hover img,
+figure.snip1033.hover img {
+    opacity: 0.5;
+}
+figure.snip1033:hover figcaption .left h3,
+figure.snip1033.hover figcaption .left h3 {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0px);
+    transform: translate(0%, 0px);
+}
+figure.snip1033:hover figcaption .right h3,
+figure.snip1033.hover figcaption .right h3 {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0px);
+    transform: translate(0%, 0px);
+}
+figure.snip1033:hover .center,
+figure.snip1033.hover .center {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+figure.snip1033:hover .center i,
+figure.snip1033.hover .center i {
+    -webkit-transform: translate(0%, -10px);
+    transform: translate(0%, -10px);
+}
