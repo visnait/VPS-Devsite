@@ -1,0 +1,21 @@
+##############################################################################
+# Extension configuration
+
+plugin.tx_obd {
+    view {
+        templateRootPath = {$plugin.tx_obd.view.templateRootPath}
+        partialRootPath = {$plugin.tx_obd.view.partialRootPath}
+        layoutRootPath = {$plugin.tx_obd.view.layoutRootPath}
+    }
+
+    features {
+        # uncomment the following line to enable the new Property Mapper.
+        # rewrittenPropertyMapper = 1
+    }
+    settings {
+        limit = {$plugin.tx_obd.settings.limit}
+    }
+}
+
+plugin.tx_obd_obd.persistence.storagePid = {$plugin.tx_obd_obd.persistence.storagePid}
+plugin.tx_obd_terms.persistence.storagePid = {$plugin.tx_obd_terms.persistence.storagePid}

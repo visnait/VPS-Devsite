@@ -122,11 +122,20 @@ return [
         'fluidcontent' => [
             'packagePath' => 'typo3conf/ext/fluidcontent/',
         ],
+        'master' => [
+            'packagePath' => 'typo3conf/ext/master/',
+        ],
         'fluidpages' => [
             'packagePath' => 'typo3conf/ext/fluidpages/',
         ],
+        'obd' => [
+            'packagePath' => 'typo3conf/ext/obd/',
+        ],
         'vhs' => [
             'packagePath' => 'typo3conf/ext/vhs/',
+        ],
+        'wh_save_buttons' => [
+            'packagePath' => 'typo3conf/ext/wh_save_buttons/',
         ],
     ],
     'version' => 5,

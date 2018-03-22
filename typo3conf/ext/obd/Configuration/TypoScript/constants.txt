@@ -1,0 +1,21 @@
+plugin.tx_obd{
+    view {
+        # cat=plugin.tx_obd/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:obd/Resources/Private/Templates/
+        # cat=plugin.tx_obd/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:obd/Resources/Private/Partials/
+        # cat=plugin.tx_obd/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:obd/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_obd//a; type=string; label=Default storage PID
+        storagePid =
+    }
+    settings {
+        limit = 5
+    }
+}
+
+
+plugin.tx_obd_obd.persistence.storagePid = 3
+plugin.tx_obd_terms.persistence.storagePid = 4
