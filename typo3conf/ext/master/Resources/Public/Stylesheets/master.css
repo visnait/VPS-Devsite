@@ -16,12 +16,12 @@ body {
   background-color: #1d1f20;
 }
 
-.well h1,
-.well h2,
-.well h3,
-.well h4,
-.well h5,
-.well h6{
+.well header > h1,
+.well header > h2,
+.well header > h3,
+.well header > h4,
+.well header > h5,
+.well header > h6{
   color: #fff;
 }
 

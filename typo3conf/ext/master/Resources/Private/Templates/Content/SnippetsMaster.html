@@ -18,7 +18,19 @@
          9:{0:'Person add',1:'ion-person-add'},
          10:{0:'Map',1:'ion-map'},
          11:{0:'Loop',1:'ion-ios-loop-strong'},
-         12:{0:'Star Outline',1:'ion-ios-star-outline'}
+         12:{0:'Star Outline',1:'ion-ios-star-outline'},
+         13:{0:'Pinterest',1:'ion-social-pinterest-outline'},
+         14:{0:'Instagram',1:'ion-social-instagram-outline'},
+         15:{0:'Dribble',1:'ion-social-dribbble-outline'},
+         16:{0:'Done',1:'ion-android-done'},
+         17:{0:'Forward',1:'ion-android-arrow-forward'},
+         18:{0:'Cart',1:'ion-ios-cart'},
+         19:{0:'Create',1:'ion-android-create'},
+         20:{0:'Home',1:'ion-ios-home-outline'},
+         21:{0:'Email',1:'ion-ios-email-outline'},
+         22:{0:'Telephone',1:'ion-ios-telephone-outline'},
+         23:{0:'Google Plus',1:'ion-social-googleplus'},
+         24:{0:'Twitter',1:'ion-social-twitter'}
          }"/>
 
     <flux:form id="snippetsmaster" label="Snippets Master">
@@ -57,16 +69,41 @@
            31:{0:'Snippets 1032',1:'1032'},
            32:{0:'Snippets 1033',1:'1033'},
            33:{0:'Snippets 1034',1:'1034'},
-           34:{0:'Snippets 1035',1:'1035'}
+           34:{0:'Snippets 1035',1:'1035'},
+           35:{0:'Snippets 1036',1:'1036'},
+           36:{0:'Snippets 1037',1:'1037'},
+           37:{0:'Snippets 1038',1:'1038'},
+           38:{0:'Snippets 1039',1:'1039'},
+           39:{0:'Snippets 1040',1:'1040'},
+           40:{0:'Snippets 1041',1:'1041'},
+           41:{0:'Snippets 1042',1:'1042'},
+           42:{0:'Snippets 1043',1:'1043'},
+           43:{0:'Snippets 1044',1:'1044'},
+           44:{0:'Snippets 1045',1:'1045'},
+           45:{0:'Snippets 1046',1:'1046'},
+           46:{0:'Snippets 1047',1:'1047'},
+           47:{0:'Snippets 1048',1:'1048'},
+           48:{0:'Snippets 1049',1:'1049'}
            }" default="1001"/>
 
+        <flux:field.checkbox name="hover" label="Hovered on start" default="0" />
         <flux:field.select label="Icon"   name="icon"  maxItems="1" size="1" items="{icons}" default="ion-android-add"/>
         <flux:field.select label="Icon 2" name="icon2" maxItems="1" size="1" items="{icons}" default="ion-android-add"/>
         <flux:field.select label="Icon 3" name="icon3" maxItems="1" size="1" items="{icons}" default="ion-android-add"/>
+        <flux:field.select label="Static color" name="static_color" maxItems="1" size="1" items="{
+           0:{0:'None',1:''},
+           1:{0:'White',1:'white'},
+           2:{0:'Blue',1:'blue'},
+           3:{0:'Red',1:'red'},
+           4:{0:'Yellow',1:'yellow'}
+           }" default=""/>
+        <flux:field.input name="color" label="Color" >
+            <flux:wizard.colorPicker label="Choose color" hideParent="1" dim="20x20"  exampleImg="EXT:flux/Resources/Public/Icons/ColorWheel.png" />
+        </flux:field.input>
         <flux:field.input name="title" label="Title" />
         <flux:field.input name="subtitle" label="Sub title" />
         <flux:field.text name="text" label="Text" />
-        <flux:field.inline.fal name="image" allowedExtensions="jpg,png" maxItems="1" minItems="1" label="Image"/>
+        <flux:field.inline.fal name="image" allowedExtensions="jpg,png" maxItems="1" minItems="0" label="Image"/>
     </flux:form>
 </f:section>
 
@@ -107,19 +144,41 @@
             <f:case value="1031"><p>Image hover effect with rotating right icon to displaying caption and icons</p></f:case>
             <f:case value="1032"><p>Image hover effect with rotating left icon to displaying caption and icons</p></f:case>
             <f:case value="1033"><p>Image hover effect with rotating right icon to displaying a split caption</p></f:case>
-            <f:case value="1034"><p></p></f:case>
-            <f:case value="1035"><p></p></f:case>
+            <f:case value="1034"><p>Image hover effect with rotating left icon to displaying a split caption</p></f:case>
+            <f:case value="1035"><p>Profile with slide up image on hover</p></f:case>
+            <f:case value="1036"><p>Profile with slide down image on hover</p></f:case>
+            <f:case value="1037"><p>Profile with name displaying multiple floating down icons on hover</p></f:case>
+            <f:case value="1038"><p>Profile with name displaying multiple floating up icons on hover</p></f:case>
+            <f:case value="1039"><p>Profile with name displaying multiple floating down icons and floating up caption on hover</p></f:case>
+            <f:case value="1040"><p>Button with a right sliding icon on hover</p></f:case>
+            <f:case value="1041"><p>Profile box with caption and image. Multiple icons floating in from the left on hover</p></f:case>
+            <f:case value="1042"><p>Profile card with name, caption, image and some icons.</p></f:case>
+            <f:case value="1043"><p>Light buttons with top/bottom expanding border on hover</p></f:case>
+            <f:case value="1044"><p>Image hover effect with float in name and icons</p></f:case>
+            <f:case value="1045"><p>A Profile card with circular image alongside name caption and icons </p></f:case>
+            <f:case value="1046"><p>Image with corner caption. Float in icons on hover.</p></f:case>
+            <f:case value="1047"><p>Buttons with float in icon from right on hover</p></f:case>
+            <f:case value="1048"><p>Panels with title/subtitle. Fade out image and float in icons on hover.</p></f:case>
+            <f:case value="1049"><p>Image hover effect with caption and icon on hover</p></f:case>
         </f:switch>
     </div>
 </f:section>
 
 <f:section name="Main">
     {v:content.resources.fal(field: 'image') -> v:iterator.first() -> v:variable.set(name: 'image')}
+    <f:if condition="{hover}">
+        <f:then>
+            <v:variable.set name="hovered" value="hover" />
+        </f:then>
+        <f:else>
+            <v:variable.set name="hovered" value="" />
+        </f:else>
+    </f:if>
 <div class="snippets_cont">
 
     <f:switch expression="{effect}">
         <f:case value="1001">
-            <figure class="snip0001">
+            <figure class="snip0001 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320"/>
                 <div>
                     <a href="#"><i class="{icon}"></i></a>
@@ -127,7 +186,7 @@
             </figure>
         </f:case>
         <f:case value="1002">
-            <figure class="snip0002">
+            <figure class="snip0002 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320"/>
                 <div>
                     <a href="#"><i class="{icon}"></i></a>
@@ -135,7 +194,7 @@
             </figure>
         </f:case>
         <f:case value="1003">
-            <figure class="snip0003">
+            <figure class="snip0003 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320c"/>
                 <div>
                     <f:if condition="{icon}"><a href="#"><i class="{icon}"></i></a></f:if>
@@ -145,7 +204,7 @@
             </figure>
         </f:case>
         <f:case value="1004">
-            <figure class="snip0004">
+            <figure class="snip0004 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320c"/>
                 <div>
                     <f:if condition="{icon}"><a href="#"><i class="{icon}"></i></a></f:if>
@@ -155,7 +214,7 @@
             </figure>
         </f:case>
         <f:case value="1005">
-            <figure class="snip0005">
+            <figure class="snip0005 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320c"/>
                 <div>
                     <f:if condition="{icon}"><a href="#"><i class="{icon}"></i></a></f:if>
@@ -165,7 +224,7 @@
             </figure>
         </f:case>
         <f:case value="1006">
-            <figure class="snip0006">
+            <figure class="snip0006 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320c"/>
                 <div>
                     <f:if condition="{icon}"><i class="{icon}"></i></f:if>
@@ -174,7 +233,7 @@
             </figure>
         </f:case>
         <f:case value="1007">
-            <figure class="snip0007">
+            <figure class="snip0007 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320c"/>
                 <div>
                     <f:if condition="{icon}"><i class="{icon}"></i></f:if>
@@ -183,7 +242,7 @@
             </figure>
         </f:case>
         <f:case value="1008">
-            <figure class="snip0008">
+            <figure class="snip0008 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320"/>
                 <div>
                     <a href="#"><i class="{icon}"></i></a>
@@ -191,7 +250,7 @@
             </figure>
         </f:case>
         <f:case value="1009">
-            <figure class="snip0009">
+            <figure class="snip0009 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320"/>
                 <div>
                     <a href="#"><i class="{icon}"></i></a>
@@ -199,7 +258,7 @@
             </figure>
         </f:case>
         <f:case value="1010">
-            <figure class="snip0010">
+            <figure class="snip0010 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320"/>
                 <div>
                     <a href="#"><i class="{icon}"></i></a>
@@ -207,7 +266,7 @@
             </figure>
         </f:case>
         <f:case value="1011">
-            <figure class="snip0011">
+            <figure class="snip0011 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320"/>
                 <div>
                     <a href="#"><i class="{icon}"></i></a>
@@ -215,7 +274,7 @@
             </figure>
         </f:case>
         <f:case value="1012">
-            <figure class="snip0012">
+            <figure class="snip0012 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320"/>
                 <div>
                     <a href="#"><i class="{icon} left-icon"></i></a>
@@ -224,7 +283,7 @@
             </figure>
         </f:case>
         <f:case value="1013">
-            <figure class="snip0013">
+            <figure class="snip0013 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320m"/>
                 <div>
                     <a href="#"><i class="{icon} left-icon"></i></a>
@@ -233,7 +292,7 @@
             </figure>
         </f:case>
         <f:case value="1014">
-            <figure class="snip0014">
+            <figure class="snip0014 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320m"/>
                 <div>
                     <h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2>
@@ -243,7 +302,7 @@
             </figure>
         </f:case>
         <f:case value="1015">
-            <figure class="snip0015">
+            <figure class="snip0015 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" width="440c" height="320"/>
                 <figcaption>
                     <h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2>
@@ -253,7 +312,7 @@
             </figure>
         </f:case>
         <f:case value="1016">
-            <figure class="snip0016">
+            <figure class="snip0016 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
                 <figcaption>
                     <h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2>
@@ -263,7 +322,7 @@
             </figure>
         </f:case>
         <f:case value="1017">
-            <figure class="snip0017">
+            <figure class="snip0017 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
                 <figcaption>
                     <h2><f:format.html>{title}</f:format.html></h2>
@@ -273,7 +332,7 @@
             </figure>
         </f:case>
         <f:case value="1018">
-            <figure class="snip0018">
+            <figure class="snip0018 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
                 <figcaption>
                     <div><h2>{title}</h2></div>
@@ -283,7 +342,7 @@
             </figure>
         </f:case>
         <f:case value="1019">
-            <figure class="snip0019">
+            <figure class="snip0019 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
                 <figcaption>
                     <div><h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2></div>
@@ -293,7 +352,7 @@
             </figure>
         </f:case>
         <f:case value="1020">
-            <figure class="snip0020">
+            <figure class="snip0020 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
                 <figcaption>
                     <div><h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2></div>
@@ -306,7 +365,7 @@
             </figure>
         </f:case>
         <f:case value="1021">
-            <figure class="snip0021">
+            <figure class="snip0021 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
                 <figcaption>
                     <div><h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2></div>
@@ -319,7 +378,7 @@
             </figure>
         </f:case>
         <f:case value="1022">
-            <figure class="snip0022">
+            <figure class="snip0022 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
                 <div>
                     <i class="{icon}"></i>
@@ -329,7 +388,7 @@
             </figure>
         </f:case>
         <f:case value="1023">
-            <figure class="snip0023">
+            <figure class="snip0023 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
                 <div>
                     <i class="{icon}"></i>
@@ -339,7 +398,7 @@
             </figure>
         </f:case>
         <f:case value="1024">
-            <figure class="snip0024">
+            <figure class="snip0024 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
                 <div>
                     <h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2>
@@ -350,7 +409,7 @@
             </figure>
         </f:case>
         <f:case value="1025">
-            <figure class="snip0025">
+            <figure class="snip0025 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
                 <div>
                     <h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2>
@@ -361,7 +420,7 @@
             </figure>
         </f:case>
         <f:case value="1026">
-            <figure class="snip0026">
+            <figure class="snip0026 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
                 <figcaption>
                     <div><h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2></div>
@@ -371,7 +430,7 @@
             </figure>
         </f:case>
         <f:case value="1027">
-            <figure class="snip0027">
+            <figure class="snip0027 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
                 <figcaption>
                     <div><p>{text}</p></div>
@@ -381,7 +440,7 @@
             </figure>
         </f:case>
         <f:case value="1028">
-            <figure class="snip0028">
+            <figure class="snip0028 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
                 <figcaption>
                     <div>
@@ -394,7 +453,7 @@
             </figure>
         </f:case>
         <f:case value="1029">
-            <figure class="snip0029">
+            <figure class="snip0029 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
                 <figcaption>
                     <div>
@@ -406,9 +465,8 @@
                 </figcaption>
             </figure>
         </f:case>
-
         <f:case value="1030">
-            <figure class="snip0030">
+            <figure class="snip0030 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
                 <div>
                     <i class="{icon}"></i>
@@ -416,9 +474,8 @@
                 <a href="#"></a>
             </figure>
         </f:case>
-
         <f:case value="1031">
-            <figure class="snip0031">
+            <figure class="snip0031 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
                 <figcaption>
                     <div>
@@ -437,9 +494,8 @@
                 </div>
             </figure>
         </f:case>
-
         <f:case value="1032">
-            <figure class="snip0032">
+            <figure class="snip0032 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
                 <figcaption>
                     <div>
@@ -458,29 +514,201 @@
                 </div>
             </figure>
         </f:case>
-
         <f:case value="1033">
-            <figure class="snip1033">
+            <figure class="snip1033 {hovered}">
                 <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
                 <figcaption>
                     <div class="left">
-                        <h3>{title}</h3>
+                        <h3 style="background-color:{color};">{title}</h3>
                     </div>
                     <div class="right">
-                        <h3 class="white">{subtitle}</h3>
+                        <h3 style="background-color:{color2};">{subtitle}</h3>
                     </div>
                 </figcaption>
                 <div class="center"><i class="ion-ios-loop-strong"></i></div>
                 <a href="#"></a>
             </figure>
         </f:case>
-
         <f:case value="1034">
-
+            <figure class="snip0034 {hovered}">
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+                <figcaption>
+                    <div class="left">
+                        <h3><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h3>
+                    </div>
+                    <div class="right">
+                        <h3 class="white">{subtitle}</h3>
+                    </div>
+                </figcaption>
+                <div class="center">
+                    <i class="ion-ios-loop-strong"></i>
+                </div>
+                <a href="#"></a>
+            </figure>
         </f:case>
-
         <f:case value="1035">
-
+            <figure class="snip0035 {hovered}">
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+                <figcaption>
+                    <div class="image">
+                        <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+                    </div>
+                    <h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2>
+                </figcaption>
+                <a href="#"></a>
+            </figure>
+        </f:case>
+        <f:case value="1036">
+            <figure class="snip0036 {hovered}">
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+                <figcaption>
+                    <div class="image">
+                        <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+                    </div>
+                    <h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2>
+                </figcaption>
+                <a href="#"></a>
+            </figure>
+        </f:case>
+        <f:case value="1037">
+            <figure class="snip0037 {hovered}">
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+                <figcaption>
+                    <h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2>
+                    <div class="icons">
+                        <a href="#"><i class="{icon}"></i></a>
+                        <a href="#"><i class="{icon2}"></i></a>
+                        <a href="#"><i class="{icon3}"></i></a>
+                    </div>
+                </figcaption>
+            </figure>
+        </f:case>
+        <f:case value="1038">
+            <figure class="snip0038 {hovered}">
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+                <figcaption>
+                    <h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2>
+                    <div class="icons">
+                        <a href="#"><i class="{icon}"></i></a>
+                        <a href="#"><i class="{icon2}"></i></a>
+                        <a href="#"><i class="{icon3}"></i></a>
+                    </div>
+                </figcaption>
+            </figure>
+        </f:case>
+        <f:case value="1039">
+            <figure class="snip0039 {hovered}">
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+                <figcaption>
+                    <h2 class="white"><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2>
+                    <p>{text}</p>
+                    <div class="icons">
+                        <a href="#"><i class="{icon}"></i></a>
+                        <a href="#"><i class="{icon2}"></i></a>
+                        <a href="#"><i class="{icon3}"></i></a>
+                    </div>
+                </figcaption>
+            </figure>
+        </f:case>
+        <f:case value="1040">
+            <button class="snip0040 {hovered} {static_color}"><span>{title}</span><i class="{icon}"></i></button>
+        </f:case>
+        <f:case value="1041">
+            <figure class="snip0041 {hovered}">
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="440"/>
+                <div class="icons">
+                    <a href="#"><i class="{icon}"></i></a>
+                    <a href="#"><i class="{icon2}"></i></a>
+                    <a href="#"><i class="{icon3}"></i></a>
+                </div>
+                <figcaption>
+                    <h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2>
+                    <p>{text}</p>
+                </figcaption>
+            </figure>
+        </f:case>
+        <f:case value="1042">
+            <figure class="snip0042 {static_color}">
+                <figcaption>
+                    <h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2>
+                    <p>{text}</p>
+                    <div class="icons">
+                        <a href="#"><i class="{icon}"></i></a>
+                        <a href="#"><i class="{icon2}"></i></a>
+                        <a href="#"><i class="{icon3}"></i></a>
+                    </div>
+                </figcaption>
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="440"/>
+                <div class="position">{subtitle}</div>
+            </figure>
+        </f:case>
+        <f:case value="1043">
+            <button class="snip0043 {hovered} {static_color}">{title}</button>
+        </f:case>
+        <f:case value="1044">
+            <figure class="snip0044 {hovered} {static_color}">
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+                <h3>{title}</h3>
+                <div class="icons">
+                    <a href="#"><i class="{icon}"></i></a>
+                    <a href="#"><i class="{icon2}"></i></a>
+                    <a href="#"><i class="{icon3}"></i></a>
+                </div>
+                <div class="corner"><i class="ion-android-add"></i></div>
+            </figure>
+        </f:case>
+        <f:case value="1045">
+            <figure class="snip0045 {hovered} {static_color}">
+                <figcaption>
+                    <h2><f:format.html parseFuncTSPath="lib.parseFunc">{title}</f:format.html></h2>
+                    <p>{text}</p>
+                    <div class="icons">
+                        <a href="#"><i class="{icon}"></i></a>
+                        <a href="#"><i class="{icon2}"></i></a>
+                        <a href="#"><i class="{icon3}"></i></a>
+                    </div>
+                </figcaption>
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="440"/>
+                <div class="position">{subtitle}</div>
+            </figure>
+        </f:case>
+        <f:case value="1046">
+            <figure class="snip0046 {hovered} {static_color}">
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+                <h3>{title}</h3>
+                <div class="icons">
+                    <a href="#"><i class="{icon}"></i></a>
+                    <a href="#"><i class="{icon2}"></i></a>
+                    <a href="#"><i class="{icon3}"></i></a>
+                </div>
+            </figure>
+        </f:case>
+        <f:case value="1047">
+            <button class="snip0047 {hovered} {static_color}"><span>{title}</span><i class="{icon}"></i></button>
+        </f:case>
+        <f:case value="1048">
+            <figure class="snip0048 {hovered} {static_color}">
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="400" height="509"/>
+                <figcaption>
+                    <h2>{title}</h2>
+                    <h3>{subtitle}</h3>
+                </figcaption>
+                <div class="icons">
+                    <a href="#"><i class="{icon}"></i></a>
+                    <a href="#"><i class="{icon2}"></i></a>
+                    <a href="#"><i class="{icon3}"></i></a>
+                </div>
+            </figure>
+        </f:case>
+        <f:case value="1049">
+            <figure class="snip0049 {hovered} {static_color}">
+                <f:image treatIdAsReference="1" src="{image.id}" title="{title}" alt="{image.alternative}" crop="{image.crop}" width="440" height="320"/>
+                <figcaption>
+                    <div><i class="{icon}"></i></div>
+                    <div><p>{text}</p></div>
+                    <a href="#"></a>
+                </figcaption>
+            </figure>
         </f:case>
 
         <f:case default="TRUE">
