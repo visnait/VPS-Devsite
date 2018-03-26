@@ -30,7 +30,10 @@
          21:{0:'Email',1:'ion-ios-email-outline'},
          22:{0:'Telephone',1:'ion-ios-telephone-outline'},
          23:{0:'Google Plus',1:'ion-social-googleplus'},
-         24:{0:'Twitter',1:'ion-social-twitter'}
+         24:{0:'Twitter',1:'ion-social-twitter'},
+         25:{0:'Arrow right',1:'ion-arrow-right-c'},
+         26:{0:'Checkmark',1:'ion-checkmark'},
+         27:{0:'Compose',1:'ion-compose'}
          }"/>
 
     <flux:form id="snippetsmaster" label="Snippets Master">
@@ -83,7 +86,8 @@
            45:{0:'Snippets 1046',1:'1046'},
            46:{0:'Snippets 1047',1:'1047'},
            47:{0:'Snippets 1048',1:'1048'},
-           48:{0:'Snippets 1049',1:'1049'}
+           48:{0:'Snippets 1049',1:'1049'},
+           49:{0:'Snippets 1050',1:'1050'}
            }" default="1001"/>
 
         <flux:field.checkbox name="hover" label="Hovered on start" default="0" />
@@ -160,6 +164,7 @@
             <f:case value="1047"><p>Buttons with float in icon from right on hover</p></f:case>
             <f:case value="1048"><p>Panels with title/subtitle. Fade out image and float in icons on hover.</p></f:case>
             <f:case value="1049"><p>Image hover effect with caption and icon on hover</p></f:case>
+            <f:case value="1050"><p>Button with single icon on hover</p></f:case>
         </f:switch>
     </div>
 </f:section>
@@ -709,6 +714,10 @@
                     <a href="#"></a>
                 </figcaption>
             </figure>
+        </f:case>
+
+        <f:case value="1050">
+            <button class="snip0050 {hovered} {static_color}"><span>{title}</span><i class="{icon}"></i></button>
         </f:case>
 
         <f:case default="TRUE">
